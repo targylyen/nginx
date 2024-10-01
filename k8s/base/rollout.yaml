@@ -13,7 +13,7 @@ metadata:
     notifications.argoproj.io/subscribe.on-analysis-run-running.slack: notifications_targylyen
     notifications.argoproj.io/subscribe.on-scaling-replica-set.slack: notifications_targylyen
 spec:
-  replicas: 1
+  replicas: 2
   strategy:
     canary:
       steps:
