@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest  # Replace with your image
+        image: nginx:stable-alpine-perl  # Replace with your image
         ports:
         - name: http
           containerPort: 80
@@ -44,7 +44,7 @@ spec:
       - command:
           - "/bin/sleep"
           - "infinity"
-        image: busybox:stable-alpine-perl
+        image: busybox:latest
         name: busybox
         resources:
           requests:
