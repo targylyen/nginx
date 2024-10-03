@@ -4,14 +4,14 @@ metadata:
   name: targylyen-nginx
   annotations:
     # notifications.argoproj.io/subscribe.on-rollout-step-completed.slack: notifications_targylyen
-    notifications.argoproj.io/subscribe.on-rollout-updated.slack: notifications_targylyen
+    # notifications.argoproj.io/subscribe.on-rollout-updated.slack: notifications_targylyen
     notifications.argoproj.io/subscribe.on-rollout-completed.slack: notifications_targylyen
-    notifications.argoproj.io/subscribe.on-rollout-aborted.slack: notifications_targylyen
-    notifications.argoproj.io/subscribe.on-rollout-paused.slack: notifications_targylyen
-    notifications.argoproj.io/subscribe.on-analysis-run-failed.slack: notifications_targylyen
-    notifications.argoproj.io/subscribe.on-analysis-run-error.slack: notifications_targylyen
-    notifications.argoproj.io/subscribe.on-analysis-run-running.slack: notifications_targylyen
-    notifications.argoproj.io/subscribe.on-scaling-replica-set.slack: notifications_targylyen
+    # notifications.argoproj.io/subscribe.on-rollout-aborted.slack: notifications_targylyen
+    # notifications.argoproj.io/subscribe.on-rollout-paused.slack: notifications_targylyen
+    # notifications.argoproj.io/subscribe.on-analysis-run-failed.slack: notifications_targylyen
+    # notifications.argoproj.io/subscribe.on-analysis-run-error.slack: notifications_targylyen
+    # notifications.argoproj.io/subscribe.on-analysis-run-running.slack: notifications_targylyen
+    # notifications.argoproj.io/subscribe.on-scaling-replica-set.slack: notifications_targylyen
 spec:
   replicas: 1
   strategy:
@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:stable-alpine-perl  # Replace with your image
+        image: nginx:latest  # Replace with your image
         ports:
         - name: http
           containerPort: 80
