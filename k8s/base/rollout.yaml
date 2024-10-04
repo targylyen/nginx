@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: targylyen-nginx
+  name: nginx
   annotations:
     # notifications.argoproj.io/subscribe.on-rollout-step-completed.slack: notifications_targylyen
     # notifications.argoproj.io/subscribe.on-rollout-updated.slack: notifications_targylyen
@@ -24,11 +24,11 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: targylyen-nginx
+      app: nginx
   template:
     metadata:
       labels:
-        app: targylyen-nginx
+        app: nginx
     spec:
       containers:
       - name: nginx
