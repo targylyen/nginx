@@ -45,7 +45,7 @@ spec:
       - command:
           - "/bin/sleep"
           - "infinity"
-        image: busybox
+        image: busybox:error
         name: busybox
         resources:
           requests:
