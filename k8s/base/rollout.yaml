@@ -5,7 +5,7 @@ metadata:
   annotations:
     # notifications.argoproj.io/subscribe.on-rollout-step-completed.slack: notifications_targylyen
     # notifications.argoproj.io/subscribe.on-rollout-updated.slack: notifications_targylyen
-    # notifications.argoproj.io/subscribe.on-rollout-completed.slack: notifications_targylyen
+    notifications.argoproj.io/subscribe.on-rollout-completed.slack: notifications_targylyen
     # notifications.argoproj.io/subscribe.on-rollout-aborted.slack: notifications_targylyen
     # notifications.argoproj.io/subscribe.on-rollout-paused.slack: notifications_targylyen
     # notifications.argoproj.io/subscribe.on-analysis-run-failed.slack: notifications_targylyen
