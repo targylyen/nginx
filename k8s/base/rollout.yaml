@@ -45,9 +45,10 @@ spec:
       - command:
           - "/bin/sleep"
           - "infinity"
-        image: busybox:error
+        image: busybox:latest
         name: busybox
         resources:
           requests:
             memory: 32Mi
             cpu: 5m
+        error_: []
