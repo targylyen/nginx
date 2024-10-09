@@ -45,7 +45,7 @@ spec:
       - command:
           - "/bin/sleep"
           - "infinity"
-        image: busybox
+        image: registry.hub.docker.com/library/busybox:latest
         name: busybox
         resources:
           requests:
