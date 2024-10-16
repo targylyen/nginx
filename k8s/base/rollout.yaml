@@ -13,7 +13,7 @@ metadata:
     # notifications.argoproj.io/subscribe.on-analysis-run-running.slack: notifications_targylyen
     # notifications.argoproj.io/subscribe.on-scaling-replica-set.slack: notifications_targylyen
 spec:
-  progressDeadlineSeconds: 30
+  progressDeadlineSeconds: 10
   replicas: 1
   strategy:
     canary:
